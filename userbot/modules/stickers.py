@@ -19,10 +19,10 @@ from telethon.tl.types import InputStickerSetID
 from telethon.tl.types import DocumentAttributeSticker
 
 KANGING_STR = [
-    "Using Witchery to kang this sticker...",
-    "Plagiarising hehe...",
+    "Stiker lo bagus gw colong oke...",
+    "Proses penjiplakan stiker mwehehehe...",
     "Lagi nambahin stikernya tunggu bentar...",
-    "Kanging this sticker...",
+    "Nyolong stiker dalam proses...",
     "Anjay sticker lo bagus!\nBolehlah gw colong?!..",
     "hehe izin curry stiker lo\nhehe.",
     "Wow Stiker lo bagus(☉｡☉)!→\nGw curi ya gpp kan...",
@@ -237,8 +237,8 @@ async def kang(args):
                 # Ensure user doesn't get spamming notifications
                 await bot.send_read_acknowledge(conv.chat_id)
 
-        await args.edit(f"`Sticker kanged successfully!`\
-            \nPack can be found [here](t.me/addstickers/{packname})",
+        await args.edit(f"`Pencolongan stikernya udah beres!`\
+            \nNih tuan stikernya [disini](t.me/addstickers/{packname})",
                         parse_mode='md')
 
 
