@@ -17,11 +17,11 @@ from userbot.events import register
 
 # ========================= CONSTANTS ============================
 UNAPPROVED_MSG = (
-    "`Hey! Sorry, I haven't approved you to PM yet.`\n"
-    "`Please wait for me to look in`\n"
-    "`Until then, please don't spam my PM..`\n"
-    "`Thank you for being patient.`\n\n"
-    "`*This is an automated message`")
+    "`Maaf saya belum mengizinkan kamu untuk PM.`\n"
+    "`Tunggu sampai saya membaca pesan anda`\n"
+    "`Tolong untuk tidak SPAM Nanti kena BLOCK..`\n"
+    "`Terima kasih telah bersabar.`\n\n"
+    "`*Ini adalah pesan otomatis`")
 # =================================================================
 
 
@@ -70,8 +70,8 @@ async def permitpm(event):
 
                 if COUNT_PM[event.chat_id] > 4:
                     await event.respond(
-                        "`I didn't like you spamming my PM.`\n"
-                        "`You have been BLOCKED and reported as SPAM, wait a minute until i online.`"
+                        "`Saya tidak suka kamu SPAM dipesan Saya.`\n"
+                        "`Kamu telah DIBLOCK dan diLaporkan SPAM, Tunggu sampai saya melihat pesanmu.`"
                     )
 
                     try:
